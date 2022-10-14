@@ -18,9 +18,21 @@ class MyApp extends StatelessWidget {
                 IconButton(icon: Icon(Icons.search), onPressed: () {}),
               ],
             ),
-            body: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [Text("Test"), RaisedButton(onPressed: () {})],
+            body: Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    "Test",
+                    style: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
+                  ),
+                  RaisedButton(
+                    onPressed: () {},
+                    child: Text("Click Me"),
+                  ),
+                  ElevatedButton(onPressed: () {}, child: Text("Click Me")),
+                ],
+              ),
             )));
   }
 }
