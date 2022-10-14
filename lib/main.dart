@@ -19,54 +19,57 @@ class MyApp extends StatelessWidget {
                   IconButton(icon: Icon(Icons.search), onPressed: () {}),
                 ],
               ),
-              body: Row(
-                children: [
-                  Container(
-                    decoration: BoxDecoration(color: Colors.red),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Test",
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.bold),
-                          ),
-                          RaisedButton(
-                            onPressed: () {},
-                            child: Text("Click Me"),
-                          ),
-                          ElevatedButton(
-                              onPressed: () {}, child: Text("Click Me")),
-                        ],
+              body: SingleChildScrollView(
+                scrollDirection: Axis.vertical,
+                child: Row(
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(color: Colors.red),
+                      child: Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Test",
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            ),
+                            RaisedButton(
+                              onPressed: () {},
+                              child: Text("Click Me"),
+                            ),
+                            ElevatedButton(
+                                onPressed: () {}, child: Text("Click Me")),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                  SizedBox(
-                    width: 10,
-                  ),
-                  Container(
-                    decoration: BoxDecoration(color: Colors.blue),
-                    child: Center(
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            "Test",
-                            style: TextStyle(
-                                fontSize: 25, fontWeight: FontWeight.bold),
-                          ),
-                          RaisedButton(
-                            onPressed: () {},
-                            child: Text("Click Me"),
-                          ),
-                          ElevatedButton(
-                              onPressed: () {}, child: Text("Click Me")),
-                        ],
+                    SizedBox(
+                      width: 10,
+                    ),
+                    Container(
+                      decoration: BoxDecoration(color: Colors.blue),
+                      child: Center(
+                        child: Column(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          children: [
+                            Text(
+                              "Test",
+                              style: TextStyle(
+                                  fontSize: 25, fontWeight: FontWeight.bold),
+                            ),
+                            RaisedButton(
+                              onPressed: () {},
+                              child: Text("Click Me"),
+                            ),
+                            ElevatedButton(
+                                onPressed: () {}, child: Text("Click Me")),
+                          ],
+                        ),
                       ),
                     ),
-                  ),
-                ],
+                  ],
+                ),
               )),
         ));
   }
