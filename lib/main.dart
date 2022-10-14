@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
                   IconButton(icon: Icon(Icons.search), onPressed: () {}),
                 ],
               ),
-              body: Column(
+              body: Row(
                 children: [
                   Container(
                     decoration: BoxDecoration(color: Colors.red),
@@ -43,7 +43,7 @@ class MyApp extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 10,
+                    width: 10,
                   ),
                   Container(
                     decoration: BoxDecoration(color: Colors.blue),
