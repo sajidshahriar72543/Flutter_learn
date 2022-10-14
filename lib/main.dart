@@ -19,27 +19,54 @@ class MyApp extends StatelessWidget {
                   IconButton(icon: Icon(Icons.search), onPressed: () {}),
                 ],
               ),
-              body: Container(
-                height: 500,
-                width: 500,
-                decoration: BoxDecoration(color: Colors.red),
-                child: Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Text(
-                        "Test",
-                        style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold),
+              body: Column(
+                children: [
+                  Container(
+                    decoration: BoxDecoration(color: Colors.red),
+                    child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Test",
+                            style: TextStyle(
+                                fontSize: 25, fontWeight: FontWeight.bold),
+                          ),
+                          RaisedButton(
+                            onPressed: () {},
+                            child: Text("Click Me"),
+                          ),
+                          ElevatedButton(
+                              onPressed: () {}, child: Text("Click Me")),
+                        ],
                       ),
-                      RaisedButton(
-                        onPressed: () {},
-                        child: Text("Click Me"),
-                      ),
-                      ElevatedButton(onPressed: () {}, child: Text("Click Me")),
-                    ],
+                    ),
                   ),
-                ),
+                  SizedBox(
+                    height: 10,
+                  ),
+                  Container(
+                    decoration: BoxDecoration(color: Colors.blue),
+                    child: Center(
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "Test",
+                            style: TextStyle(
+                                fontSize: 25, fontWeight: FontWeight.bold),
+                          ),
+                          RaisedButton(
+                            onPressed: () {},
+                            child: Text("Click Me"),
+                          ),
+                          ElevatedButton(
+                              onPressed: () {}, child: Text("Click Me")),
+                        ],
+                      ),
+                    ),
+                  ),
+                ],
               )),
         ));
   }
